@@ -1,0 +1,86 @@
+* {
+  font-family: 'Work Sans', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Space Mono', monospace;
+}
+
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 0.9em;
+  margin-top: 5%;
+  padding: 5%;
+  text-align: center;
+}
+
+#container{
+  width: 75%;
+  margin-left: 20%
+}
+
+#codingImage{
+  background-attachment: fixed;
+  background-image: url('./Coding Image.jpeg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+#headerTitle{
+  font-family: "Space Mono", monospace;
+  margin-left: 5%;
+}
+
+#mainContainer{
+  margin: 0 5%;
+}
+
+#checklist{
+  margin-top: 5%;
+  width: 100%;
+}
+
+#submission-form {
+  /* display: none; */
+  width: 100%;
+}
+
+#submission-form.show {
+  display: initial;
+}
+
+#submission-form > * {
+  width: 50%;
+}
+
+#submission-form > button:hover {
+  color: red;
+}
+
+.break {
+  background-color: red;
+  height: 10px;
+  margin-bottom: 3%;
+  width: 100%;
+}
+
+.checkboxes{
+  width: 50%;
+}
+
+.links{
+  border: 1px solid;
+  border-color: #8B8B8B;
+}
+
+@media screen and (max-width: 480px) {
+  #checklist > * {
+    width: 100%;
+  }
+  
+  #submission-form > * {
+    width: 100%;
+  }
+}
