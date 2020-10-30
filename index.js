@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded",()=>{
   // deleteAllCookies()
 
 
-  // Variables and Array for getting and saving checkbox values
+// Variables and Array for getting and saving checkbox values
   checkbox1 = document.getElementById("checkbox1")
   checkbox2 = document.getElementById("checkbox2")
   checkboxes = ["checkbox1","checkbox2"]
@@ -72,6 +72,18 @@ document.addEventListener("DOMContentLoaded",()=>{
     firebaseRef.child(idNum).set({"name":name,"email": email, "subscription": subscription,})
   })
 
+  // Redirect after clicking link button and enable checkbox 
+  document.getElementById("linkButton1").addEventListener("click",()=>{
+    window.open("https://www.google.com")
+    checkbox1.disabled = false
+  })
+
+  document.getElementById("linkButton2").addEventListener("click",()=>{
+    window.open("https://www.youtube.com")
+    checkbox2.disabled = false
+  })
+
+
 
   // Save all cookies after submission
   // for(let i = 0; i < checkboxes.length; i++){
@@ -136,3 +148,15 @@ document.addEventListener("DOMContentLoaded",()=>{
 //   cookieValue = cookieArray[i].substr(10)
 //   checkboxdict[cookieKey] = cookieValue
 // }
+
+
+
+
+
+// Add a new event listener for link buttons and redirection (Line 85)
+// Replace LINKBUTTONNUMBER with linkButton variable with it's corresponding number
+
+// document.getElementById("LINKBUTTONNUMBER").addEventListener("click",()=>{
+//   window.open("https://www.google.com")
+//   CHECKBOXNAME.disabled = false
+// })
